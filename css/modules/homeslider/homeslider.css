@@ -21,6 +21,8 @@
 
 #homepage-slider h1{
   text-transform: uppercase;
+  color:white;
+  margin: 36px;
 }
 
   @media (max-width: 767px) {
@@ -40,7 +42,7 @@
   #homepage-slider .homeslider-description {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     padding: 50px 50px;
     cursor: pointer; }
     #homepage-slider .homeslider-description h2 {
@@ -83,16 +85,17 @@
   #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {
     background: #666; }
   #homepage-slider .bx-wrapper .bx-controls-direction a {
-    top: auto;
+    top: 20px;
+    background-color: #ed2338;
+    margin-right: -12px;
     margin-top: 0px;
     font-size: 1em;
-    bottom: 10px;
+    bottom: auto;
     outline: 0;
     width: 52px;
     height: 52px;
     text-indent: -9999px;
     z-index: 9999;
-    border: 2px solid #fff;
     line-height: 18px; }
     #homepage-slider .bx-wrapper .bx-controls-direction a:before {
       height: 48px;
@@ -124,7 +127,7 @@
       background: #333;
       opacity: 0.83; }
   #homepage-slider .bx-wrapper .bx-prev {
-    right: 60px;
+    right: 65px;
     left: auto; }
     #homepage-slider .bx-wrapper .bx-prev:after {
       content: "\f053"; }
@@ -133,5 +136,7 @@
 
 .ie8 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
   background: #333; }
-
+.bx-wrapper {
+    border: 2px solid #455362;
+}
 /*# sourceMappingURL=homeslider.css.map */
