@@ -14,6 +14,15 @@
   /*****************************************************************************
   						BXSlider Styles
   ********************************************************************************/ }
+
+.homeslider-description{
+  font-family 'open sans' sans-serif;
+}
+
+#homepage-slider h1{
+  text-transform: uppercase;
+}
+
   @media (max-width: 767px) {
     #homepage-slider {
       width: 100%;
