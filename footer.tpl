@@ -33,7 +33,7 @@
 			{if isset($HOOK_FOOTER)}
 				<!-- Footer -->
 				<div class="footer-container">
-					<footer id="footer"  class="container-fluid">
+					<footer id="footer"  class="container">
 						<div class="">{$HOOK_FOOTER}</div>
 					</footer>
 				</div><!-- #footer -->

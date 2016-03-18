@@ -7234,7 +7234,8 @@ div.star a:hover {
   @media (min-width: 768px) {
     .footer-container {} }
   .footer-container .container {
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    max-width: 100%; }
   .footer-container #footer {
     color: #777777; }
     .footer-container #footer .row {
@@ -7306,7 +7307,10 @@ div.star a:hover {
     .footer-container #footer #social_block {
       float: left;
       width: 100%;
-      padding: 22px 15px 0 15px; }
+      padding: 22px 15px 0 15px; 
+      background-color: #091018;
+  border-top:3px solid #585858;
+  border-bottom:3px solid #585858;}
       @media (max-width: 767px) {
         .footer-container #footer #social_block {
           width: 100%;
@@ -7370,12 +7374,10 @@ div.star a:hover {
             display: none;
             text-align: center; } }
     .footer-container #footer .bottom-footer {
-      position: absolute;
-      bottom: -55px;
+      .footer-container #footer .bottom-footer div
       left: 0; }
       .footer-container #footer .bottom-footer div {
-        padding: 15px 0 0 0;
-        border-top: 1px solid #515151;
+        
         width: 100%; }
 
 #reinsurance_block {
@@ -8566,5 +8568,10 @@ div.star.star_hover:after {
 
 .pointer-box {
   cursor: pointer; }
+
+
+.footer-container #footer .footer-block {
+    float: right;
+}
 
 /*# sourceMappingURL=global.css.map */
