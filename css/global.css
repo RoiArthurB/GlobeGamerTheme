@@ -273,6 +273,13 @@ img {
   max-width: 100%;
   height: auto; }
 
+.logo {
+    display: block;
+    width: 190px;
+    height: 55px;
+    margin: 50px;
+}
+
 .img-rounded {
   border-radius: 6px; }
 
@@ -5730,7 +5737,9 @@ textarea {
 header {
   z-index: 1;
   position: relative;
-  background: #fff;
+  background: #091018;
+  background-image:url(../img/header.jpg);
+  background-repeat: no-repeat;
   padding-bottom: 15px; }
   header .banner {
     background: black;
