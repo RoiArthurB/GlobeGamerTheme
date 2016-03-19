@@ -7243,10 +7243,12 @@ div.star a:hover {
     .footer-container #footer ul.row {
       position: static; }
     .footer-container #footer .footer-block {
-      margin-top: 45px; }
+      margin-top: 45px;
+      transform: translate(70%);}
       @media (max-width: 767px) {
         .footer-container #footer .footer-block {
-          margin-top: 20px; } }
+          margin-top: 20px; 
+          transform: translate(0%);} }
     .footer-container #footer a {
       color: #777777; }
       .footer-container #footer a:hover {
@@ -7315,7 +7317,7 @@ div.star a:hover {
         .footer-container #footer #social_block {
           width: 100%;
           float: left;
-          padding-top: 5px; } }
+          padding-top: 20px; } }
       .footer-container #footer #social_block ul {
         float: right;
         margin-right: 30px; }
@@ -8575,10 +8577,5 @@ div.star.star_hover:after {
 
 .pointer-box {
   cursor: pointer; }
-
-
-.footer-container #footer .footer-block {
-    float: right;
-}
 
 /*# sourceMappingURL=global.css.map */
