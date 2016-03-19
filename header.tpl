@@ -82,7 +82,8 @@
 						</div>
 					{/if}
 					<div>
-						<div class="container">
+						<div class="container-fluid">
+							<div class="container">
 							<div class="row">
 								<div id="header_logo">
 									<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
@@ -93,8 +94,8 @@
 								{if $smarty.capture.displayNav}
 									<div id="header_logo" style="float:right; text-align: right; padding-right: 30px;">{$smarty.capture.displayNav}</div>
 								{/if}
-							</div>
-							<div clas="row">
+							</div></div>
+							<div class="row">
 								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 							</div>
 						</div>

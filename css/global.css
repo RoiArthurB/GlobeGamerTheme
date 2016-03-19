@@ -623,9 +623,7 @@ header .row #header_logo,
 .col-lg-11,
 .col-lg-12 {
   position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  min-height: 1px; }
 
 .col-xs-1,
 .col-xs-2,
