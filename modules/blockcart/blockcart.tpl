@@ -26,7 +26,7 @@
 {if isset($blockcart_top) && $blockcart_top}
 <li style="float: right">
 	{/if}
-		<div class="shopping_cart" style="padding-top: 5px"> <!-- pb avec la class -->
+		<div class="shopping_cart"> 
 			<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
 				<b>{l s='Cart' mod='blockcart'}</b>
 				<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>

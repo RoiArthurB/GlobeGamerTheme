@@ -988,7 +988,7 @@ header .row #header_logo,
     margin-left: 91.66667%; } }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px; }
+    max-width: 1200px; }
 
   .col-lg-1,
   .col-lg-2,
@@ -5737,8 +5737,7 @@ header {
   position: relative;
   background: #091018;
   background-image:url(../img/header.jpg);
-  background-repeat: no-repeat;
-  padding-bottom: 15px; }
+  background-repeat: no-repeat;}
   header .banner {
     background: black;
     max-height: 100%; }
