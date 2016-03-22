@@ -24,6 +24,7 @@
 *}
 {if isset($htmlitems) && $htmlitems}
 <div id="htmlcontent_{$hook|escape:'htmlall':'UTF-8'}"{if $hook == 'footer'} class="footer-block col-xs-12 col-sm-4"{/if}>
+	<h1 class="titre_haut" style="margin: 18px;">Sélection de la semaine</h1>
 	<ul class="htmlcontent-home clearfix row">
 		{foreach name=items from=$htmlitems item=hItem}
 			{if $hook == 'left' || $hook == 'right'}
@@ -35,7 +36,7 @@
 						<a href="{$hItem.url|escape:'htmlall':'UTF-8'}" class="item-link"{if $hItem.target == 1} onclick="return !window.open(this.href);"{/if} title="{$hItem.title|escape:'htmlall':'UTF-8'}">
 					{/if}
 						{if $hItem.image}
-							<img src="{$link->getMediaLink("`$module_dir`img/`$hItem.image`")}" class="item-img {if $hook == 'left' || $hook == 'right'}img-responsive{/if}" title="{$hItem.title|escape:'htmlall':'UTF-8'}" alt="{$hItem.title|escape:'htmlall':'UTF-8'}" width="{if $hItem.image_w}{$hItem.image_w|intval}{else}100%{/if}" height="{if $hItem.image_h}{$hItem.image_h|intval}{else}100%{/if}"/>
+							<img src="{$link->getMediaLink("`$module_dir`img/`$hItem.image`")}" class="item-img {if $hook == 'left' || $hook == 'right'}img-responsive{/if}" title="{$hItem.title|escape:'htmlall':'UTF-8'}" alt="{$hItem.title|escape:'htmlall':'UTF-8'}" width="{if $hItem.image_w}{$hItem.image_w|intval}{else}100%{/if}" height="{if $hItem.image_h}{$hItem.image_h|intval}{else}100%{/if}" style="width: 381px; height: 777px;"/>
 						{/if}
 						{if $hItem.title && $hItem.title_use == 1}
 							<h3 class="item-title">{$hItem.title|escape:'htmlall':'UTF-8'}</h3>

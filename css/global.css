@@ -415,6 +415,11 @@ h4 small, .h4 small {
   margin: 36px 0 18px;
   border-bottom: 1px solid #eeeeee; }
 
+h1.titre_haut{
+    text-transform: uppercase;
+    color: white;
+    margin: 36px; }
+
 ul,
 ol {
   margin-top: 0;
