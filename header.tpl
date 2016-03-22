@@ -92,7 +92,7 @@
 								</div>
 								{capture name='displayNav'}{hook h='displayNav'}{/capture}
 								{if $smarty.capture.displayNav}
-									<div id="header_logo" style="float:right; text-align: right; padding-right: 30px;">{$smarty.capture.displayNav}</div>
+									<div id="header_logo" class="boutonco" style="float:right; text-align: right; padding-right: 30px;">{$smarty.capture.displayNav}</div>
 								{/if}
 							</div></div>
 							<div class="row">

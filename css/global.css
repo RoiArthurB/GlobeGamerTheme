@@ -8580,4 +8580,15 @@ div.star.star_hover:after {
 .pointer-box {
   cursor: pointer; }
 
+.boutonco{
+  margin:50px;
+}
+.boutonco a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #109cc7;
+    padding: 10px;
+}
 /*# sourceMappingURL=global.css.map */
