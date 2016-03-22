@@ -6162,6 +6162,7 @@ span.exclusive {
 .button.lnk_view {
   font: 700 17px/21px Arial, Helvetica, sans-serif;
   color: #333;
+  display: none;
   text-shadow: 1px 1px white;
   padding: 0;
   border: 1px solid;
@@ -7351,7 +7352,6 @@ div.star a:hover {
             .footer-container #footer #social_block ul li a:before {
               display: inline-block;
               font-family: "FontAwesome";
-              vertical-align: -5px;
               font-weight: normal;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoothing: grayscale; }
