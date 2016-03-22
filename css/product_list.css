@@ -204,7 +204,7 @@ ul.product_list.grid > li {
     ul.product_list.grid > li .product-container .old-price {
       margin-right: 5px; }
     ul.product_list.grid > li .product-container .button-container {
-      margin-bottom: 14px; }
+      }
       @media (min-width: 1200px) {
         ul.product_list.grid > li .product-container .button-container {
           display: inline-block; } }
