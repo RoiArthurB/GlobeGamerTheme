@@ -6236,9 +6236,11 @@ table.table_block td {
   font-size: 17px;
   line-height: 23px;
   color: white;
+  text-align: left;
+  margin-left: 6px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: -40px; }
+  margin-bottom: -50px; }
   .product-name a {
     font-size: 17px;
     line-height: 23px;
@@ -6276,7 +6278,7 @@ table.table_block td {
   padding: 0 3px 0 3px;
   float: right;
   position: relative;
-  top: -150px;
+  top: -120px;
   display: inline-block; }
   .price-percent-reduction.small {
     font: 700 14px/17px Arial, Helvetica, sans-serif;
@@ -8590,6 +8592,6 @@ div.star.star_hover:after {
     background: #212830;
     width: 200px;
     padding-top: 12px;
-    margin: 0 auto;
+    margin-left: 20px;
 }
 /*# sourceMappingURL=global.css.map */
