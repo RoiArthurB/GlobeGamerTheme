@@ -262,12 +262,14 @@
 
 #layer_cart {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   display: none;
+  bottom: 20px;
   z-index: 99;
   width: 84%;
-  margin-right: 8%;
-  margin-left: 8%;
+  height: 10%;
+  top:20px;
+  margin-left: -13%;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }

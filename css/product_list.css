@@ -160,11 +160,10 @@ ul.product_list.grid > li {
       width: 50%;
       float: left; } }
   ul.product_list.grid > li .product-container {
-    background: #fff;
     padding: 0;
     position: relative; }
     ul.product_list.grid > li .product-container .product-image-container {
-      border: 1px solid #d6d4d4;
+      border: 2px solid #455362;
       margin-bottom: 13px;
       position: relative; }
       @media (max-width: 767px) {
@@ -198,13 +197,14 @@ ul.product_list.grid > li {
     ul.product_list.grid > li .product-container .old-price,
     ul.product_list.grid > li .product-container .price,
     ul.product_list.grid > li .product-container .price-percent-reduction {
-      display: inline-block; }
+      display: inline-block;
+      font-size: 16px; }
     ul.product_list.grid > li .product-container .product-flags {
       display: none; }
     ul.product_list.grid > li .product-container .old-price {
-      margin-right: 5px; }
+      font-size: 11px;}
     ul.product_list.grid > li .product-container .button-container {
-      margin-bottom: 14px; }
+      }
       @media (min-width: 1200px) {
         ul.product_list.grid > li .product-container .button-container {
           display: inline-block; } }
@@ -292,6 +292,12 @@ ul.product_list.list > li .product-desc {
     width: 100%; } }
 ul.product_list.list > li .center-block .comments_note {
   margin-bottom: 12px; }
+
+.right-block{
+  position: relative;
+    top: -150px;
+}
+
 @media (min-width: 992px) {
   ul.product_list.list > li .right-block .right-block-content {
     margin: 0;
@@ -368,11 +374,11 @@ Product list(Index page) Styles
 ********************************************************/
 #index ul.product_list.tab-pane > li {
   padding-bottom: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: -100px; }
   @media (min-width: 1200px) {
     #index ul.product_list.tab-pane > li {
-      padding-bottom: 85px;
-      margin-bottom: 0; } }
+      padding: 10px;
+      margin-bottom: -100px; } }
   #index ul.product_list.tab-pane > li .availability {
     display: none; }
   @media (min-width: 1200px) {
