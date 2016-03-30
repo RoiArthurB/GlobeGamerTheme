@@ -398,3 +398,13 @@ Product list(Index page) Styles
   border: 1px solid #d6d4d4; }
 
 /*# sourceMappingURL=product_list.css.map */
+
+/********************************************************
+Custom
+********************************************************/
+span.cat-name{
+  color: white;
+}
+span.heading-counter{
+  display: none;
+}

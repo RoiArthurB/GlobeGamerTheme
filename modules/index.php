@@ -1,4 +1,5 @@
-{*
+<?php
+/*
 * 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
@@ -21,24 +22,14 @@
 *  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*}
-<div class="pagenotfound"> 
-	<h1>{l s='This page is not available'}</h1>
+*/
 
-	<p>
-		{l s='We\'re sorry, but the Web address you\'ve entered is no longer available.'}
-	</p>
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
 
-	<h3>{l s='To find a product, please type its name in the field below.'}</h3>
-	<form action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="post" class="std">
-		<fieldset>
-			<div>
-				<label for="search_query">{l s='Search our product catalog:'}</label>
-				<input id="search_query" name="search_query" type="text" class="form-control grey" />
-                <button type="submit" name="Submit" value="OK" class="btn btn-default button button-small"><span>{l s='Ok'}</span></button>
-			</div>
-		</fieldset>
-	</form>
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
 
-	<div class="buttons"><a class="btn btn-default button button-medium" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home'}"><span><i class="icon-chevron-left left"></i>{l s='Home page'}</span></a></div>
-</div>
+header("Location: ../");
+exit;
