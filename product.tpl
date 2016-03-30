@@ -36,7 +36,7 @@
 	{/if}
 
 	<div itemscope itemtype="https://schema.org/Product">
-		<div id="img2fond" style="background-color: grey;">
+		<div id="img2fond">
 			<meta itemprop="url" content="{$link->getProductLink($product)}">
 			<div class="primary_block row">
 				{if !$content_only}
@@ -282,6 +282,7 @@
 											</div> <!-- end attributes -->
 											{/if}
 										</div> <!-- end product_attributes -->
+										{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 										<div class="box-cart-bottom">
 											<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 											<p id="add_to_cart" class="buttons_bottom_block no-print">
@@ -290,7 +291,6 @@
 												</button>
 											</p>
 										</div>
-										{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 									</div> <!-- end box-cart-bottom -->
 								</div> <!-- end box-info-product -->
 							</form>
