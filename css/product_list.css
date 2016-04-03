@@ -221,7 +221,9 @@ ul.product_list.grid > li {
       ul.product_list.grid > li .product-container .functional-buttons div {
         width: 50%;
         float: left;
-        padding: 3px 0 4px 0; }
+        padding: 3px 0 4px 0;
+        position: absolute;
+        top: 20px; }
   @media (min-width: 1200px) {
     ul.product_list.grid > li.hovered .product-container {
       -moz-box-shadow: rgba(0, 0, 0, 0.17) 0 0 13px;
