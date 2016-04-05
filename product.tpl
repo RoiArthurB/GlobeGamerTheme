@@ -66,7 +66,7 @@
 
 
 				<!-- left infos-->
-				<div class="pb-left-column col-xs-12 col-sm-8">
+				<div class="pb-left-column col-xs-12 col-sm-8" style="margin-right: 2em;">
 					<!-- product img-->
 					<div id="image-block" class="clearfix">
 						{if $product->new}

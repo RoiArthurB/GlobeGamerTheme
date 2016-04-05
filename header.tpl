@@ -120,4 +120,8 @@
 						<div id="left_column" class="column hidden-xs hidden-sm col-md-{$left_column_size|intval}">
 						<!-- xs/sm hidden - md-4 -->{$HOOK_LEFT_COLUMN}</div>
 						{/if}
+						{if isset($right_colum_size) && !empty($right_colum_size)}
+						<div id="right_column" class="column hidden-xs hidden-sm col-md-{$right_colum_size|intval}">
+						<!-- xs/sm hidden - md-4 -->{$HOOK_RIGHT_COLUMN}</div>
+						{/if}
 	{/if}
