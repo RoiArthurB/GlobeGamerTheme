@@ -8328,13 +8328,13 @@ div.star.star_on {
     content: "\f005";
     font-family: "FontAwesome";
     display: inline-block;
-    color: #ef8743; }
+    color: #109cc7; }
 
 div.star.star_hover:after {
   content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #ef8743; }
+  color: #109cc7; }
 
 .advertising_block {
   width: 191px;
