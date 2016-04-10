@@ -88,7 +88,7 @@
 								<img itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 							</a>
 							{else}
-							<img id="bigpic" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
+							<img id="bigpic" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 							{if !$content_only}
 							<span class="span_link no-print">{l s='View larger'}</span>
 							{/if}
@@ -303,10 +303,11 @@
 
 				
 				<!-- center infos -->
-				<div class="pb-center-column col-xs-12 col-sm-8">
+				<div class="pb-center-column col-xs-12 col-sm-12">
 					{if $product->online_only}
 					<p class="online_only">{l s='Online only'}</p>
 					{/if}
+					<div class="col-md-8">
 					<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 					{if $product->description_short || $packItems|@count > 0}
 					<div id="short_description_block">
@@ -323,6 +324,18 @@
 						{/if}
 					</div> <!-- end short_description_block -->
 					{/if}
+				</div>
+				<div class="col-md-4">
+				{if isset($product) && $product->description}
+				<!-- More info -->
+				<section class="page-product-box">
+					<h3 class="page-product-heading">{l s='More info'}</h3>
+					<!-- full description -->
+					<div  class="rte">{$product->description}</div>
+				</section>
+				<!--end  More info -->
+				{/if}
+				</div>
 					<!-- Out of stock hook -->
 					<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
 						{$HOOK_PRODUCT_OOS}
@@ -425,15 +438,7 @@
 				</section>
 				<!--end Data sheet -->
 				{/if}
-				{if isset($product) && $product->description}
-				<!-- More info -->
-				<section class="page-product-box">
-					<h3 class="page-product-heading">{l s='More info'}</h3>
-					<!-- full description -->
-					<div  class="rte">{$product->description}</div>
-				</section>
-				<!--end  More info -->
-				{/if}
+
 				{if isset($packItems) && $packItems|@count > 0}
 				<section id="blockpack">
 					<h3 class="page-product-heading">{l s='Pack content'}</h3>

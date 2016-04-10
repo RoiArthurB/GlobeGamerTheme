@@ -1,10 +1,6 @@
 #product_comments_block_extra {
-  padding: 8px 10px 10px;
   font-weight: bold;
-  line-height: 18px;
-  border: 1px solid #d6d4d4;
-  background: #fbfbfb;
-  margin: 39px 0 22px; }
+  line-height: 18px; }
   #product_comments_block_extra .comments_note {
     margin-bottom: 5px; }
   #product_comments_block_extra .comments_note span,
@@ -42,6 +38,7 @@
     margin-right: 8px;
     line-height: 30px;
     padding: 0;
+    z-index: 10;
     display: inline-block; }
     @media (min-width: 768px) and (max-width: 1199px) {
       .comments_advices a {
@@ -175,8 +172,7 @@
   margin: 0 0 20px 0; }
   #product_comments_block_tab div.comment {
     margin: 0 0 14px;
-    padding-top: 14px;
-    border-top: 1px solid #d6d4d4; }
+    padding-top: 14px;}
     #product_comments_block_tab div.comment:first-child {
       padding: 0;
       border: none; }
@@ -191,8 +187,7 @@
         vertical-align: middle;
         margin: 0 0 0 5px; }
     #product_comments_block_tab div.comment .comment_details {
-      overflow: hidden;
-      border-left: 1px solid #d6d4d4; }
+      overflow: hidden; }
       @media (max-width: 991px) {
         #product_comments_block_tab div.comment .comment_details {
           border-left: none; }
@@ -221,12 +216,15 @@
     padding-top: 9px; }
     #product_comments_block_tab .comment_author_infos strong {
       display: block;
-      color: #333; }
+      color: white; }
     #product_comments_block_tab .comment_author_infos em {
       color: #adadad; }
   #product_comments_block_tab a {
     text-decoration: none;
-    font-weight: bold; }
+    font-weight: bold;
+    border: 1px solid #ed2338;
+    background: #ed2338;
+    padding: 10px 10px; }
   #product_comments_block_tab span.report_btn {
     cursor: pointer; }
   #product_comments_block_tab span.report_btn:hover {
@@ -238,4 +236,32 @@
 .fr {
   float: right; }
 
+.bloccom{
+  background-color: #141B23;
+}
+
+.titrebloccom{
+  border-top:2px solid #107C9E;
+  border-right:2px solid #107C9E;
+  border-left:2px solid #107C9E;
+}
+
+.contentbloccom{
+  border-bottom:2px solid #107C9E;
+  border-right:2px solid #107C9E;
+  border-left:2px solid #107C9E;
+}
+
+.titrecommentaire{
+  text-transform: uppercase;
+  color: white;
+}
+
+.contentcommentaire{
+  color: white;  
+}
+
+.boutonavis{
+  margin-left: 20px;
+}
 /*# sourceMappingURL=productcomments.css.map */

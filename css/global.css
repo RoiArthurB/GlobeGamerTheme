@@ -373,8 +373,7 @@ h1, h2, h3, h4, h5, h6,
 h1,
 h2,
 h3 {
-  margin-top: 18px;
-  margin-bottom: 9px; }
+  margin-top: 18px; }
 
 h4,
 h5,
@@ -5981,9 +5980,7 @@ span.exclusive {
   border-radius: 0; }
   .button.button-small span {
     display: block;
-    padding: 3px 8px 3px 8px;
-    border: 1px solid;
-    border-color: #8b8a8a; }
+    padding: 3px 8px 3px 8px;}
     .button.button-small span i {
       vertical-align: 0px;
       margin-right: 5px; }
@@ -6652,18 +6649,14 @@ table.table_block td {
   border-bottom: 1px solid #d6d4d4; }
 
 h3.page-product-heading {
-  color: #555454;
+  color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
   padding: 14px 20px 17px;
-  margin: 0 0 20px;
-  position: relative;
-  border: 1px solid #d6d4d4;
-  border-bottom: none;
-  background: #fbfbfb; }
+  position: relative;}
 
 ul.footer_links {
   padding: 20px 0 0px 0;

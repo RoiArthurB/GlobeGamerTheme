@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="idTab5">
+<div id="idTab5" class="bloccom contentbloccom">
 	<div id="product_comments_block_tab">
 		{if $comments}
 			{foreach from=$comments item=comment}
@@ -50,10 +50,10 @@
 					</div> <!-- .comment_author -->
 
 					<div class="comment_details col-sm-10">
-						<p itemprop="name" class="title_block">
+						<p itemprop="name" class="title_block titrecommentaire">
 							<strong>{$comment.title}</strong>
 						</p>
-						<p itemprop="reviewBody">{$comment.content|escape:'html':'UTF-8'|nl2br}</p>
+						<p itemprop="reviewBody" class="contentcommentaire">{$comment.content|escape:'html':'UTF-8'|nl2br}</p>
 						<ul>
 							{if $comment.total_advice > 0}
 								<li>
@@ -88,7 +88,7 @@
 			{/foreach}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form boutonavis" href="#new_comment_form">
 					<span>{l s='Write your review!' mod='productcomments'}</span>
 				</a>
 			</p>
@@ -96,7 +96,7 @@
 		{else}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form boutonavis" href="#new_comment_form">
 					<span>{l s='Be the first to write your review!' mod='productcomments'}</span>
 				</a>
 			</p>
